@@ -77,18 +77,35 @@ export class CarouselController {
   showPreviousSlide() {
     this.activeIndex =
       (this.activeIndex - 1 + this.offers.length) % this.offers.length;
-    this.updateVisibleSlide();
+    this.updateVisibleSlide("previous");
   }
 
   showNextSlide() {
     this.activeIndex = (this.activeIndex + 1) % this.offers.length;
-    this.updateVisibleSlide();
+    this.updateVisibleSlide("next");
   }
 
-  updateVisibleSlide() {
-    this.container.querySelectorAll(".carousel__slide").forEach((slideElement) => {
-      const slideIndex = Number(slideElement.dataset.slideIndex);
-      slideElement.classList.toggle("is-active", slideIndex === this.activeIndex);
+  updateVisibleSlide(direction = "next") {
+    const carouselElement = this.container.querySelector(".carousel");
+    const directionClass =
+      direction === "previous" ? "carousel--previous" : "carousel--next";
+
+    carouselElement?.classList.remove("carousel--next", "carousel--previous");
+    carouselElement?.classList.add(directionClass, "is-transitioning");
+
+    const outgoingSlide = this.container.querySelector(".carousel__slide.is-active");
+    outgoingSlide?.classList.add("is-leaving");
+
+    window.requestAnimationFrame(() => {
+      this.container.querySelectorAll(".carousel__slide").forEach((slideElement) => {
+        const slideIndex = Number(slideElement.dataset.slideIndex);
+        slideElement.classList.toggle("is-active", slideIndex === this.activeIndex);
+      });
+
+      window.setTimeout(() => {
+        carouselElement?.classList.remove("is-transitioning");
+        outgoingSlide?.classList.remove("is-leaving");
+      }, 360);
     });
 
     this.trackActiveSlide();

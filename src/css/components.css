@@ -229,18 +229,52 @@
 
 .carousel {
   position: relative;
+  --carousel-enter-x: 18px;
+  --carousel-exit-x: -18px;
 }
 
 .carousel__track {
   position: relative;
+  display: grid;
 }
 
 .carousel__slide {
-  display: none;
+  grid-area: 1 / 1;
+  min-width: 0;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(var(--carousel-enter-x)) scale(0.985);
+  transition:
+    opacity 320ms ease,
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    visibility 0ms linear 360ms;
+  will-change: opacity, transform;
 }
 
 .carousel__slide.is-active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0) scale(1);
+  transition:
+    opacity 320ms ease,
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    visibility 0ms;
+}
+
+.carousel--next.is-transitioning {
+  --carousel-enter-x: 18px;
+  --carousel-exit-x: -18px;
+}
+
+.carousel--previous.is-transitioning {
+  --carousel-enter-x: -18px;
+  --carousel-exit-x: 18px;
+}
+
+.carousel__slide.is-leaving {
+  transform: translateX(var(--carousel-exit-x)) scale(0.985);
 }
 
 .carousel__controls {
@@ -302,6 +336,14 @@
 
   .tile__body--carousel {
     min-height: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__slide,
+  .carousel__slide.is-active {
+    transition: none;
+    transform: none;
   }
 }
 
@@ -502,8 +544,9 @@
   }
 
   .tile--carousel {
+    height: 270px;
     min-height: 228px;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
   }
 
   .tile__body--carousel {
@@ -529,6 +572,10 @@
   .carousel__controls {
     right: 12px;
     bottom: -22px;
+  }
+
+  .carousel{
+    margin-bottom: 20px;
   }
 
   .tile--small-offer,
