@@ -279,11 +279,11 @@
 }
 
 .carousel__control-icon--previous {
-  background-image: url("../../assets/arrow-left.svg");
+  background-image: url("../../assets/carousel_arrow_left.svg");
 }
 
 .carousel__control-icon--next {
-  background-image: url("../../assets/arrow-right.svg");
+  background-image: url("../../assets/carousel_arrow_right.svg");
 }
 
 .carousel__control[hidden],
@@ -477,7 +477,7 @@
   display: block;
   width: 16px;
   height: 16px;
-  background-image: url("../../assets/x.svg");
+  background-image: url("../../assets/close_icon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 16px 16px;

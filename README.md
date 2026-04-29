@@ -2,6 +2,7 @@
 
 Static frontend implementation of the HP offer-tile simulator exercise using semantic HTML, plain CSS, and native JavaScript.
 
+
 ## Run locally
 
 Because the app loads `data/offers.json` with `fetch`, serve the folder with a local static server instead of opening `index.html` directly.
@@ -16,42 +17,6 @@ Then open:
 
 ```text
 http://localhost:8000
-```
-
-## Project structure
-
-```text
-.
-├── assets/
-│   ├── 19742_Day2_111_A 1.png
-│   ├── HP Care Pack RGB blue 60.png
-│   ├── Mask group.png
-│   ├── Product Image.png
-│   ├── arrow-left.svg
-│   ├── arrow-right.svg
-│   ├── printer.png
-│   └── x.svg
-├── data/
-│   └── offers.json
-├── src/
-│   ├── css/
-│   │   ├── base.css
-│   │   ├── components.css
-│   │   ├── layout.css
-│   │   ├── tokens.css
-│   │   └── utilities.css
-│   └── js/
-│       ├── app.js
-│       ├── carousel.js
-│       ├── data-loader.js
-│       ├── dom-helpers.js
-│       ├── event-tracker.js
-│       ├── renderer.js
-│       ├── selector.js
-│       ├── sticky-footer.js
-│       └── template-engine.js
-├── index.html
-└── README.md
 ```
 
 ## Rendering approach
@@ -129,12 +94,3 @@ Triggered when a tile receives keyboard focus or newly enters the viewport after
 
 - The supplied local image assets are stored in `assets/`.
 - Image paths and alt text come from `data/offers.json`, so changing an asset does not require JavaScript changes.
-- CSS uses `object-fit: contain` or `object-fit: cover` per component to match the provided desktop and mobile screenshots.
-- The current image mapping is a first-pass approximation based on the screenshots:
-  - `assets/printer.png`: top product image
-  - `assets/Mask group.png`: small offer tile
-  - `assets/19742_Day2_111_A 1.png`: SKU tile
-  - `assets/Product Image.png`: banner tile
-  - `assets/HP Care Pack RGB blue 60.png`: carousel icon
-  - `assets/arrow-left.svg` and `assets/arrow-right.svg`: carousel navigation icons
-  - `assets/x.svg`: sticky-footer close icon
