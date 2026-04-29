@@ -17,7 +17,7 @@
       "productSummary": {
         "selectorLabel": "Serial number:",
         "image": {
-          "src": "./assets/product_summary_printer.png",
+          "src": "./assets/product_summary_printer.webp",
           "alt": "HP Envy printer"
         },
         "details": [
@@ -39,7 +39,7 @@
         {
           "id": "carousel-offer-1",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Carousel Offer #1 Title",
@@ -52,7 +52,7 @@
         {
           "id": "carousel-offer-2",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Instant ink savings",
@@ -65,7 +65,7 @@
         {
           "id": "carousel-offer-3",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Device care coverage",
@@ -79,7 +79,7 @@
       "smallOfferTile": {
         "id": "small-offer-1",
         "image": {
-          "src": "./assets/small_offer_printer_photo.png",
+          "src": "./assets/small_offer_printer_photo.webp",
           "alt": "Customer using printer"
         },
         "title": "Small Tile Offer Title",
@@ -92,7 +92,7 @@
       "skuOfferTile": {
         "id": "sku-offer-1",
         "image": {
-          "src": "./assets/sku_offer_printer.png",
+          "src": "./assets/sku_offer_printer.webp",
           "alt": "HP printer promotional image"
         },
         "pill": {
@@ -109,7 +109,7 @@
       "bannerTile": {
         "id": "banner-offer-1",
         "image": {
-          "src": "./assets/banner_offer_printer.png",
+          "src": "./assets/banner_offer_printer.webp",
           "alt": "HP printer banner"
         },
         "title": "Banner Offer Title",
@@ -134,7 +134,7 @@
       "productSummary": {
         "selectorLabel": "Serial number:",
         "image": {
-          "src": "./assets/product_summary_printer.png",
+          "src": "./assets/product_summary_printer.webp",
           "alt": "HP Envy printer"
         },
         "details": [
@@ -156,7 +156,7 @@
         {
           "id": "carousel-offer-4",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Protection plan savings",
@@ -169,7 +169,7 @@
         {
           "id": "carousel-offer-5",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Premium support access",
@@ -183,7 +183,7 @@
       "smallOfferTile": {
         "id": "small-offer-2",
         "image": {
-          "src": "./assets/small_offer_printer_photo.png",
+          "src": "./assets/small_offer_printer_photo.webp",
           "alt": "Customer using printer"
         },
         "title": "Ink plan upgrade",
@@ -196,7 +196,7 @@
       "skuOfferTile": {
         "id": "sku-offer-2",
         "image": {
-          "src": "./assets/sku_offer_printer.png",
+          "src": "./assets/sku_offer_printer.webp",
           "alt": "HP printer promotional image"
         },
         "pill": {
@@ -213,7 +213,7 @@
       "bannerTile": {
         "id": "banner-offer-2",
         "image": {
-          "src": "./assets/banner_offer_printer.png",
+          "src": "./assets/banner_offer_printer.webp",
           "alt": "HP printer banner"
         },
         "title": "Banner Offer Title",
@@ -238,7 +238,7 @@
       "productSummary": {
         "selectorLabel": "Serial number:",
         "image": {
-          "src": "./assets/product_summary_printer.png",
+          "src": "./assets/product_summary_printer.webp",
           "alt": "HP Envy printer"
         },
         "details": [
@@ -260,7 +260,7 @@
         {
           "id": "carousel-offer-6",
           "icon": {
-            "src": "./assets/hp_care_pack_logo.png",
+            "src": "./assets/hp_care_pack_logo.webp",
             "alt": "HP care offer"
           },
           "title": "Coverage after warranty",
@@ -274,7 +274,7 @@
       "smallOfferTile": {
         "id": "small-offer-3",
         "image": {
-          "src": "./assets/small_offer_printer_photo.png",
+          "src": "./assets/small_offer_printer_photo.webp",
           "alt": "Customer using printer"
         },
         "title": "Scan and print bundle",
@@ -287,7 +287,7 @@
       "skuOfferTile": {
         "id": "sku-offer-3",
         "image": {
-          "src": "./assets/sku_offer_printer.png",
+          "src": "./assets/sku_offer_printer.webp",
           "alt": "HP printer promotional image"
         },
         "pill": {
@@ -304,7 +304,7 @@
       "bannerTile": {
         "id": "banner-offer-3",
         "image": {
-          "src": "./assets/banner_offer_printer.png",
+          "src": "./assets/banner_offer_printer.webp",
           "alt": "HP printer banner"
         },
         "title": "Banner Offer Title",

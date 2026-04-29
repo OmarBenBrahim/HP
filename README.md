@@ -28,6 +28,28 @@ http://localhost:8000
 - Changing the selector re-renders the selected product summary, offers, banner, and sticky footer.
 - No framework or build step is required.
 
+## Project structure
+
+```text
+.
+├── assets/
+│   ├── banner_offer_printer.webp
+│   ├── carousel_arrow_left.svg
+│   ├── carousel_arrow_right.svg
+│   ├── close_icon.svg
+│   ├── hp_care_pack_logo.webp
+│   ├── product_summary_printer.webp
+│   ├── sku_offer_printer.webp
+│   └── small_offer_printer_photo.webp
+├── data/
+│   └── offers.json
+├── src/
+│   ├── css/
+│   └── js/
+├── index.html
+└── README.md
+```
+
 ## Component system
 
 Implemented components:
@@ -94,3 +116,4 @@ Triggered when a tile receives keyboard focus or newly enters the viewport after
 
 - The supplied local image assets are stored in `assets/`.
 - Image paths and alt text come from `data/offers.json`, so changing an asset does not require JavaScript changes.
+- Raster assets are WebP for smaller file sizes and better runtime performance.
