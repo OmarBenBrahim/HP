@@ -448,7 +448,33 @@
 .event-log__list {
   display: grid;
   gap: var(--space-12);
+  max-height: var(--event-log-max-height);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: var(--space-12);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(var(--color-surface), var(--color-surface)) padding-box,
+    linear-gradient(180deg, rgba(2, 120, 171, 0.16), rgba(33, 33, 33, 0.08)) border-box;
+  box-shadow: var(--shadow-card);
   list-style: none;
+  scrollbar-color: var(--color-brand) transparent;
+  scrollbar-width: thin;
+}
+
+.event-log__list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.event-log__list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.event-log__list::-webkit-scrollbar-thumb {
+  border: 2px solid var(--color-surface);
+  border-radius: 999px;
+  background: var(--color-brand);
 }
 
 .event-log__item {
@@ -665,6 +691,11 @@
   .tile__price--sale {
     font-size: 18px;
     line-height: 24px;
+  }
+
+  .event-log__list {
+    max-height: var(--event-log-max-height-mobile);
+    padding: var(--space-10);
   }
 
   .sticky-footer {

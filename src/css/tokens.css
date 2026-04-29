@@ -70,6 +70,8 @@
   --page-shell-padding-y: 28px;
   --sticky-footer-height: 48px;
   --sticky-footer-height-mobile: 44px;
+  --event-log-max-height: 320px;
+  --event-log-max-height-mobile: 260px;
 
   --breakpoint-tablet: 840px;
   --breakpoint-desktop: 1080px;
