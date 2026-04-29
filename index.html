@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HP Offer Tiles Simulator</title>
+    <link rel="stylesheet" href="./src/css/tokens.css" />
+    <link rel="stylesheet" href="./src/css/base.css" />
+    <link rel="stylesheet" href="./src/css/layout.css" />
+    <link rel="stylesheet" href="./src/css/components.css" />
+    <link rel="stylesheet" href="./src/css/utilities.css" />
+  </head>
+  <body>
+    <div class="page-background">
+      <div class="page-shell">
+        <main class="page-main" id="app-root">
+          <section
+            class="product-summary"
+            id="product-summary"
+            aria-labelledby="product-summary-title"
+          ></section>
+
+          <section
+            class="offers-section"
+            id="promotions-section"
+            aria-labelledby="promotions-title"
+          ></section>
+
+          <section
+            class="offers-section"
+            id="recommendations-section"
+            aria-labelledby="recommendations-title"
+          ></section>
+
+          <aside class="event-log" aria-labelledby="event-log-title">
+            <div class="event-log__header">
+              <h2 class="event-log__title" id="event-log-title">Event log</h2>
+              <p class="event-log__caption">
+                Offer impressions, clicks, and focus events appear here and in
+                the browser console.
+              </p>
+            </div>
+            <ol class="event-log__list" id="event-log-list"></ol>
+          </aside>
+        </main>
+      </div>
+    </div>
+
+    <div id="sticky-footer-root"></div>
+
+    <script type="module" src="./src/js/app.js"></script>
+  </body>
+</html>

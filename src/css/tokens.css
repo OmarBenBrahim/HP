@@ -1,0 +1,76 @@
+:root {
+  --font-family-base: "Forma DJR UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  --color-page-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-subtle: #f8f8f8;
+  --color-border: #e7e7e7;
+  --color-border-strong: #b7b7b7;
+  --color-divider: #C9C9C9;
+  --color-text-strong: #212121;
+  --color-text-default: #404040;
+  --color-text-muted: #737373;
+  --color-text-soft: #8e8e8e;
+  --color-brand: #0278ab;
+  --color-brand-dark: #005b84;
+  --color-pill: #3DFFAC52;
+  --color-shadow: rgba(33, 33, 33, 0.1);
+  --color-shadow-strong: rgba(33, 33, 33, 0.2);
+
+  --shadow-card: 0px 1px 4px 1px #21212133;
+
+  --shadow-select: 0px 3px 12px 3px #21212133;
+
+
+  --radius-card: 16px;
+  --radius-card-soft: 14px;
+  --radius-button: 8px;
+  --radius-selector: 12px;
+  --radius-pill: 17px;
+
+  --space-4: 4px;
+  --space-8: 8px;
+  --space-10: 10px;
+  --space-12: 12px;
+  --space-16: 16px;
+  --space-20: 20px;
+  --space-24: 24px;
+  --space-28: 28px;
+  --space-32: 32px;
+  --space-40: 40px;
+  --space-48: 48px;
+  --space-56: 56px;
+  --space-64: 64px;
+  --space-72: 72px;
+
+  --text-size-eyebrow: 20px;
+  --text-size-section: 24px;
+  --text-size-body: 16px;
+  --text-size-small: 14px;
+  --text-size-meta: 12px;
+  --text-size-button: 14px;
+  --text-size-tile-large: 32px;
+  --text-size-tile-medium: 24px;
+
+  --line-height-eyebrow: 24px;
+  --line-height-section: 24px;
+  --line-height-body: 24px;
+  --line-height-small: 20px;
+  --line-height-meta: 16px;
+  --line-height-button: 20px;
+  --line-height-tile-large: 40px;
+  --line-height-tile-medium: 32px;
+
+  --button-height: 38px;
+  --selector-width: 208px;
+  --selector-height: 48px;
+
+  --page-max-width: 1366px;
+  --page-shell-padding-x: 32px;
+  --page-shell-padding-y: 28px;
+  --sticky-footer-height: 48px;
+  --sticky-footer-height-mobile: 44px;
+
+  --breakpoint-tablet: 840px;
+  --breakpoint-desktop: 1080px;
+}

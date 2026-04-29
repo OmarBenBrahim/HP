@@ -1,0 +1,328 @@
+{
+  "html": {
+    "productSummary": "<h1 class=\"visually-hidden\" id=\"product-summary-title\">Product summary</h1><div class=\"product-summary__layout\"><div class=\"product-summary__group\"><div class=\"product-summary__media\"><img class=\"product-summary__image\" src=\"{{image.src}}\" alt=\"{{image.alt}}\"></div><div class=\"product-summary__content\"><div class=\"product-summary__selector-row\"><span class=\"product-summary__selector-label\" id=\"serial-selector-label\">{{selectorLabel}}</span><div class=\"selector selector--single js-selector\" data-selected-value=\"{{selectedSerial}}\"><button class=\"selector__trigger js-selector-trigger\" type=\"button\" aria-haspopup=\"listbox\" aria-expanded=\"false\" aria-labelledby=\"serial-selector-label serial-selector-value\"><span class=\"selector__value\" id=\"serial-selector-value\">{{selectedSerial}}</span><span class=\"selector__chevron\" aria-hidden=\"true\"></span></button><ul class=\"selector__menu js-selector-menu\" role=\"listbox\" aria-labelledby=\"serial-selector-label\">{{{selectorOptionsHtml}}}</ul></div></div><dl class=\"product-summary__details\">{{{detailsHtml}}}</dl></div></div></div>",
+    "carouselTile": "<article class=\"tile tile--carousel js-track-tile\" data-offer-id=\"{{id}}\" data-component-type=\"carousel\" tabindex=\"0\"><div class=\"tile__body tile__body--carousel\"><img class=\"tile__icon\" src=\"{{icon.src}}\" alt=\"{{icon.alt}}\"><h3 class=\"tile__title tile__title--carousel\">{{title}}</h3><p class=\"tile__description tile__description--carousel\">{{description}}</p><a class=\"button button--primary tile__button\" href=\"{{button.href}}\" data-track-click=\"true\">{{button.label}}</a></div></article>",
+    "smallOfferTile": "<article class=\"tile tile--small-offer js-track-tile\" data-offer-id=\"{{id}}\" data-component-type=\"small-offer\" tabindex=\"0\"><div class=\"tile__media tile__media--small\"><img class=\"tile__image\" src=\"{{image.src}}\" alt=\"{{image.alt}}\"></div><div class=\"tile__body tile__body--small\"><h3 class=\"tile__title tile__title--small\">{{title}}</h3><p class=\"tile__description tile__description--small\">{{description}}</p><a class=\"button button--primary tile__button\" href=\"{{button.href}}\" data-track-click=\"true\">{{button.label}}</a></div></article>",
+    "skuOfferTile": "<article class=\"tile tile--sku-offer js-track-tile\" data-offer-id=\"{{id}}\" data-component-type=\"sku-offer\" tabindex=\"0\"><div class=\"tile__media tile__media--sku\"><img class=\"tile__image\" src=\"{{image.src}}\" alt=\"{{image.alt}}\"></div><div class=\"tile__body tile__body--sku\"><p class=\"tile__pill\">{{pill.label}}</p><p class=\"tile__description tile__description--sku\">{{description}}</p><div class=\"tile__price-row\"><span class=\"tile__price tile__price--strike\">{{strikePrice}}</span><span class=\"tile__price tile__price--sale\">{{salePrice}}</span></div><a class=\"button button--secondary tile__button\" href=\"{{button.href}}\" data-track-click=\"true\">{{button.label}}</a></div></article>",
+    "bannerTile": "<article class=\"tile tile--banner js-track-tile\" data-offer-id=\"{{id}}\" data-component-type=\"banner\" tabindex=\"0\"><div class=\"tile__media tile__media--banner\"><img class=\"tile__image\" src=\"{{image.src}}\" alt=\"{{image.alt}}\"></div><div class=\"tile__body tile__body--banner\"><h3 class=\"tile__title tile__title--banner\">{{title}}</h3><p class=\"tile__description tile__description--banner\">{{description}}</p><a class=\"button button--primary tile__button\" href=\"{{button.href}}\" data-track-click=\"true\">{{button.label}}</a></div></article>",
+    "stickyFooter": "<div class=\"sticky-footer\" data-footer-id=\"{{id}}\"><div class=\"sticky-footer__content\"><p class=\"sticky-footer__title\">{{title}}</p><a class=\"button button--primary sticky-footer__button\" href=\"{{button.href}}\">{{button.label}}</a></div><button class=\"sticky-footer__close\" type=\"button\" aria-label=\"{{closeLabel}}\"><span class=\"sticky-footer__close-icon\" aria-hidden=\"true\"></span></button></div>"
+  },
+  "labels": {
+    "promotions": "Promotions & deals",
+    "recommendations": "You may also like"
+  },
+  "products": [
+    {
+      "id": "5CD9396KWX",
+      "productSummary": {
+        "selectorLabel": "Serial number:",
+        "image": {
+          "src": "./assets/printer.png",
+          "alt": "HP Envy printer"
+        },
+        "details": [
+          {
+            "label": "Product name:",
+            "value": "HP Envy 6055e All-in-One Printer"
+          },
+          {
+            "label": "Warranty status:",
+            "value": "In warranty"
+          },
+          {
+            "label": "Product number:",
+            "value": "7NW78PA"
+          }
+        ]
+      },
+      "carouselOffers": [
+        {
+          "id": "carousel-offer-1",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Carousel Offer #1 Title",
+          "description": "Carousel offer #1 description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-1"
+          }
+        },
+        {
+          "id": "carousel-offer-2",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Instant ink savings",
+          "description": "Keep printing with a discounted refill plan tailored to this device and warranty status.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-2"
+          }
+        },
+        {
+          "id": "carousel-offer-3",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Device care coverage",
+          "description": "Extend support coverage and get simplified troubleshooting for everyday home printing.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-3"
+          }
+        }
+      ],
+      "smallOfferTile": {
+        "id": "small-offer-1",
+        "image": {
+          "src": "./assets/Mask group.png",
+          "alt": "Customer using printer"
+        },
+        "title": "Small Tile Offer Title",
+        "description": "Small tile offer description - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "button": {
+          "label": "Offer button",
+          "href": "#small-offer-1"
+        }
+      },
+      "skuOfferTile": {
+        "id": "sku-offer-1",
+        "image": {
+          "src": "./assets/19742_Day2_111_A 1.png",
+          "alt": "HP printer promotional image"
+        },
+        "pill": {
+          "label": "SKU tile offer title"
+        },
+        "description": "SKU tile offer description - Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "strikePrice": "$399.99",
+        "salePrice": "$499.99",
+        "button": {
+          "label": "Offer button",
+          "href": "#sku-offer-1"
+        }
+      },
+      "bannerTile": {
+        "id": "banner-offer-1",
+        "image": {
+          "src": "./assets/Product Image.png",
+          "alt": "HP printer banner"
+        },
+        "title": "Banner Offer Title",
+        "description": "banner offer description - Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.",
+        "button": {
+          "label": "Offer button",
+          "href": "#banner-offer-1"
+        }
+      },
+      "stickyFooter": {
+        "id": "sticky-footer-1",
+        "title": "Not enrolled yet?",
+        "button": {
+          "label": "Offer button",
+          "href": "#sticky-footer-1"
+        },
+        "closeLabel": "Dismiss sticky footer"
+      }
+    },
+    {
+      "id": "5CD9396KWY",
+      "productSummary": {
+        "selectorLabel": "Serial number:",
+        "image": {
+          "src": "./assets/printer.png",
+          "alt": "HP Envy printer"
+        },
+        "details": [
+          {
+            "label": "Product name:",
+            "value": "HP Envy 6055e All-in-One Printer"
+          },
+          {
+            "label": "Warranty status:",
+            "value": "Warranty expiring soon"
+          },
+          {
+            "label": "Product number:",
+            "value": "7NW78PA"
+          }
+        ]
+      },
+      "carouselOffers": [
+        {
+          "id": "carousel-offer-4",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Protection plan savings",
+          "description": "Secure a discounted coverage extension before the current warranty period ends.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-4"
+          }
+        },
+        {
+          "id": "carousel-offer-5",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Premium support access",
+          "description": "Connect with support faster and keep this printer ready for home-office workloads.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-5"
+          }
+        }
+      ],
+      "smallOfferTile": {
+        "id": "small-offer-2",
+        "image": {
+          "src": "./assets/Mask group.png",
+          "alt": "Customer using printer"
+        },
+        "title": "Ink plan upgrade",
+        "description": "Reduce refill hassle with a plan designed for frequent color printing and scanning.",
+        "button": {
+          "label": "Offer button",
+          "href": "#small-offer-2"
+        }
+      },
+      "skuOfferTile": {
+        "id": "sku-offer-2",
+        "image": {
+          "src": "./assets/19742_Day2_111_A 1.png",
+          "alt": "HP printer promotional image"
+        },
+        "pill": {
+          "label": "Limited bundle offer"
+        },
+        "description": "Save on a bundle that pairs print supplies with a short-term care plan add-on.",
+        "strikePrice": "$449.99",
+        "salePrice": "$379.99",
+        "button": {
+          "label": "Offer button",
+          "href": "#sku-offer-2"
+        }
+      },
+      "bannerTile": {
+        "id": "banner-offer-2",
+        "image": {
+          "src": "./assets/Product Image.png",
+          "alt": "HP printer banner"
+        },
+        "title": "Banner Offer Title",
+        "description": "Discover accessories and care options matched to this printer before your warranty changes.",
+        "button": {
+          "label": "Offer button",
+          "href": "#banner-offer-2"
+        }
+      },
+      "stickyFooter": {
+        "id": "sticky-footer-2",
+        "title": "Renew support today",
+        "button": {
+          "label": "Offer button",
+          "href": "#sticky-footer-2"
+        },
+        "closeLabel": "Dismiss sticky footer"
+      }
+    },
+    {
+      "id": "5CD9396KWZ",
+      "productSummary": {
+        "selectorLabel": "Serial number:",
+        "image": {
+          "src": "./assets/printer.png",
+          "alt": "HP Envy printer"
+        },
+        "details": [
+          {
+            "label": "Product name:",
+            "value": "HP Envy 6055e All-in-One Printer"
+          },
+          {
+            "label": "Warranty status:",
+            "value": "Expired"
+          },
+          {
+            "label": "Product number:",
+            "value": "7NW78PA"
+          }
+        ]
+      },
+      "carouselOffers": [
+        {
+          "id": "carousel-offer-6",
+          "icon": {
+            "src": "./assets/HP Care Pack RGB blue 60.png",
+            "alt": "HP care offer"
+          },
+          "title": "Coverage after warranty",
+          "description": "Explore a post-warranty support option for repair guidance and device troubleshooting.",
+          "button": {
+            "label": "Offer button",
+            "href": "#carousel-offer-6"
+          }
+        }
+      ],
+      "smallOfferTile": {
+        "id": "small-offer-3",
+        "image": {
+          "src": "./assets/Mask group.png",
+          "alt": "Customer using printer"
+        },
+        "title": "Scan and print bundle",
+        "description": "Get a bundled service recommendation for frequent scanning, copying, and homework printing.",
+        "button": {
+          "label": "Offer button",
+          "href": "#small-offer-3"
+        }
+      },
+      "skuOfferTile": {
+        "id": "sku-offer-3",
+        "image": {
+          "src": "./assets/19742_Day2_111_A 1.png",
+          "alt": "HP printer promotional image"
+        },
+        "pill": {
+          "label": "SKU tile offer title"
+        },
+        "description": "Bring costs down with a discounted bundle for ink, coverage, and device upkeep.",
+        "strikePrice": "$529.99",
+        "salePrice": "$449.99",
+        "button": {
+          "label": "Offer button",
+          "href": "#sku-offer-3"
+        }
+      },
+      "bannerTile": {
+        "id": "banner-offer-3",
+        "image": {
+          "src": "./assets/Product Image.png",
+          "alt": "HP printer banner"
+        },
+        "title": "Banner Offer Title",
+        "description": "Compare care and subscription offers curated for an expired-warranty printer profile.",
+        "button": {
+          "label": "Offer button",
+          "href": "#banner-offer-3"
+        }
+      },
+      "stickyFooter": {
+        "id": "sticky-footer-3",
+        "title": "Get protected again",
+        "button": {
+          "label": "Offer button",
+          "href": "#sticky-footer-3"
+        },
+        "closeLabel": "Dismiss sticky footer"
+      }
+    }
+  ]
+}
